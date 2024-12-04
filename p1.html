@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Categories</title>
+  <style>
+    /* Basic styling for the menu */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      width: 250px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      display: block;
+    }
+    a:hover {
+      background-color: #575757;
+    }
+    .submenu {
+      display: none;
+      padding-left: 20px;
+    }
+    .submenu a {
+      padding: 5px 25px;
+    }
+    .active .submenu {
+      display: block;
+    }
+    .toggle-btn {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <!-- Electronics Category -->
+      <li class="category">
+        <a href="#" class="toggle-btn">Electronics</a>
+        <ul class="submenu">
+          <li><a href="#">Mobile Phones</a></li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Cameras</a></li>
+        </ul>
+      </li>
+
+      <!-- Furniture Category -->
+      <li class="category">
+        <a href="#" class="toggle-btn">Furniture</a>
+        <ul class="submenu">
+          <li><a href="#">Sofas</a></li>
+          <li><a href="#">Beds</a></li>
+          <li><a href="#">Dining Tables</a></li>
+        </ul>
+      </li>
+
+      <!-- Clothing Category -->
+      <li class="category">
+        <a href="#" class="toggle-btn">Clothing</a>
+        <ul class="submenu">
+          <li><a href="#">Men's Wear</a></li>
+          <li><a href="#">Women's Wear</a></li>
+          <li><a href="#">Kids' Wear</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    // JavaScript to handle the toggle functionality
+    const categories = document.querySelectorAll('.category');
+
+    categories.forEach(category => {
+      category.querySelector('.toggle-btn').addEventListener('click', function() {
+        category.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

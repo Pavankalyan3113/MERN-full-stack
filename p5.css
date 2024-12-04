@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 28px;
+        }
+        p {
+            background-color: lightgray;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an internally-styled heading</h1>
+    <p>This is an internally-styled paragraph.</p>
+</body>
+</html>

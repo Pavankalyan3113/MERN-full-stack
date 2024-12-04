@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Styles</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-container img {
+      width: 150px;
+      height: 150px;
+    }
+    .dotted { border: 5px dotted #000; }
+    .dashed { border: 5px dashed #000; }
+    .solid { border: 5px solid #000; }
+    .double { border: 5px double #000; }
+    .groove { border: 5px groove #000; }
+    .ridge { border: 5px ridge #000; }
+    .inset { border: 5px inset #000; }
+    .outset { border: 5px outset #000; }
+    .none { border: none; }
+    .hidden { border: hidden; }
+    .label {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\bat1.jpg" alt="Dotted Border" class="dotted">
+    <div class="label">Dotted</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\bat2.png" alt="Dashed Border" class="dashed">
+    <div class="label">Dashed</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\bat3.jpg" alt="Solid Border" class="solid">
+    <div class="label">Solid</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\sup1.jpg" alt="Double Border" class="double">
+    <div class="label">Double</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\sup2.jpg" alt="Groove Border" class="groove">
+    <div class="label">Groove</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\sup3.jpg" alt="Ridge Border" class="ridge">
+    <div class="label">Ridge</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\dor1.jpg" alt="Inset Border" class="inset">
+    <div class="label">Inset</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\dor2.jpg" alt="Outset Border" class="outset">
+    <div class="label">Outset</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\dor3.jpg" alt="None Border" class="none">
+    <div class="label">None</div>
+  </div>
+  <div class="image-container">
+    <img src="c:\Users\pavan\Downloads\dpr4.jpg" alt="Hidden Border" class="hidden">
+    <div class="label">Hidden</div>
+  </div>
+</body>
+</html>
